@@ -3,7 +3,8 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'GEZINSLIM - Live smarter. Keep more.',
-  description: 'Family financial assistant',
+  description: 'Je digitale familie assistent',
+  viewport: 'width=device-width, initial-scale=1',
 }
 
 export default function RootLayout({
@@ -13,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="nl">
-      <body className="bg-white">{children}</body>
+      <body className="bg-white">
+        {children}
+      </body>
     </html>
   )
 }
